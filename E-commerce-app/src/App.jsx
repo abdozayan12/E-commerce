@@ -3,7 +3,7 @@ import Home from './home';
 import ProductDetail from './ProductDetail';  
 import Cart from './Cart';         
 import { CartProvider } from './CartContext';
-import Nav from './nav'; // Assuming 'nav' is a component, it should be capitalized
+import Nav from './Nav'; // Corrected capitalization of 'Nav' component
 import './App.css';
 
 function App() {
