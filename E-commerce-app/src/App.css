@@ -55,3 +55,12 @@ button:hover {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
