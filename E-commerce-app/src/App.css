@@ -64,3 +64,12 @@ button:hover {
   color: white;
   padding: 10px 20px;
 }
+
+.productCard a {
+  text-decoration: none;
+  color: black;
+  border: #333 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f4f4f4;
+}

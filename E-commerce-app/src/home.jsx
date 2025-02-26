@@ -23,14 +23,14 @@ function Home() {
       <h1>Product Listing</h1>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         {products.map((product) => (
-          <div key={product.id} style={{ border: '1px solid #ddd', padding: '10px', borderRadius: '8px' }}>
+          <div className='productCard' key={product.id} style={{ border: '1px solid #ddd', padding: '10px', borderRadius: '8px' }}>
             <h2>{product.name}</h2>
             <p>{product.description}</p>
             <p><strong>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(product.price)}</strong></p>
             <button onClick={() => handleAddToCart(product)} style={{ marginRight: '10px' }}>
               {addedProductId === product.id ? 'Added!' : 'Add to Cart'}
             </button>
-            <Link to={`/product/${product.id}`}>View Product</Link>
+            <Link className='viewProduct' to={`/product/${product.id}`}>View Product</Link>
           </div>
         ))}
       </div>
