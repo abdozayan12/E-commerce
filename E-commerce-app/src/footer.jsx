@@ -1,7 +1,7 @@
 function footer() {
   return (
     <div>
-      <h1>Footer</h1>
+      <p>All rights reseved @ Abdo Zayan 2025</p>
     </div>
   );
 } 
